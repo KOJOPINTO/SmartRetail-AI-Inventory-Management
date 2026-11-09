@@ -26,6 +26,15 @@ The project implements five automated workflows:
 3. **Inventory Stock Adjustment Automation** – Processes inventory adjustment requests and validates stock availability.
 4. **Inventory Stock Adjustment Response Automation** – Sends email notifications for successful and rejected adjustment requests.
 5. **AI Inventory Forecasting Automation** – Uses Google Gemini AI to analyze inventory and sales information, assess stockout risk, and recommend order quantities.
+   
+## Key Features
+
+- **Automated Inventory Restocking:** Automatically updates stock records when inventory is replenished.
+- **Low-Stock Monitoring:** Detects products that reach their reorder levels and triggers email alerts.
+- **Inventory Adjustment Validation:** Checks adjustment requests and prevents stock deductions when insufficient inventory is available.
+- **Automated Email Responses:** Notifies users when inventory adjustments are successful or rejected.
+- **AI-Powered Forecasting:** Uses Google Gemini AI to assess stockout risk and recommend replenishment quantities.
+- **Interactive Management Dashboard:** Visualizes revenue, sales volume, inventory levels, and AI-generated forecasts using Looker Studio.
 
 ## Technology Stack
 
@@ -42,7 +51,7 @@ The project implements five automated workflows:
 
 ### Dashboard Preview
 
-![SmartRetail Dashboard](![Uploading SmartRetail dashboard image.png…]())
+![SmartRetail Dashboard](!<img width="929" height="404" alt="SmartRetail dashboard image" src="https://github.com/user-attachments/assets/6a952e44-53de-4c75-9e1c-b61eb6921ca3" />())
 
 [View the SmartRetail Management Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
 
@@ -106,3 +115,15 @@ This project uses simulated sales and inventory records for demonstration and ed
 ## Project Status
 
 Core automation workflows and the management dashboard have been developed and tested. Further improvements may include additional reporting, more advanced forecasting models, and expanded operational integrations.
+
+## Project Demo
+
+### Live Dashboard
+Explore the interactive SmartRetail management dashboard:
+
+[Open SmartRetail Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
+
+### Dashboard Screenshot
+![SmartRetail Dashboard](images/dashboard-overview.png)
+
+**Note:** SmartRetail is a demonstration project built with simulated business data. The dashboard and automation workflows illustrate how AI and business process automation can support retail operations.
