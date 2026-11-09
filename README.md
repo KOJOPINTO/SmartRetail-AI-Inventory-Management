@@ -40,6 +40,10 @@ The project implements five automated workflows:
 ## Business Intelligence Dashboard
 ### Live Dashboard
 
+### Dashboard Preview
+
+![SmartRetail Dashboard](![Uploading SmartRetail dashboard image.png…]())
+
 [View the SmartRetail Management Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
 
 The Looker Studio dashboard provides management with visibility into:
