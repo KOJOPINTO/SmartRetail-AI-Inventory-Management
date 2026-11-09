@@ -70,14 +70,17 @@ The AI forecasting workflow analyzes product-level information, including:
 Gemini generates risk classifications and inventory recommendations to support purchasing decisions.
 
 ## Project Architecture
+
 ```mermaid
 flowchart TD
-    A[Google Forms] --> B[Google Sheets]
-    B --> C[Make.com Automation]
-    C --> D[Google Gemini AI]
-    D --> E[Google Sheets - AI Forecasts]
-    E --> F[Looker Studio Dashboard]
-    C --> G[Automated Email Notifications]
+    A["Google Forms"] --> B["Google Sheets"]
+    B --> C["Make.com Automation"]
+    C --> D["Google Gemini AI"]
+    D --> E["AI Forecasts in Google Sheets"]
+    E --> F["Looker Studio Dashboard"]
+    C --> G["Automated Email Notifications"]
+```
+
 
 Google Forms / Google Sheets → Make.com → Google Gemini AI → Google Sheets → Looker Studio
 
