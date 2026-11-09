@@ -112,6 +112,15 @@ Email notifications are also generated through the automated workflows.
 
 This project uses simulated sales and inventory records for demonstration and educational purposes. Forecasts and recommendations should not be interpreted as actual business purchasing decisions.
 
+## Future Enhancements
+
+- Integrate live sales and inventory data from a real retail environment.
+- Improve demand forecasting using historical sales patterns and machine learning.
+- Introduce role-based access and approval workflows for inventory adjustments.
+- Expand management reporting with additional business performance metrics.
+- Integrate external inventory or accounting systems through APIs.
+
+
 ## Project Status
 
 Core automation workflows and the management dashboard have been developed and tested. Further improvements may include additional reporting, more advanced forecasting models, and expanded operational integrations.
@@ -123,7 +132,15 @@ Explore the interactive SmartRetail management dashboard:
 
 [Open SmartRetail Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
 
-### Dashboard Screenshot
-![SmartRetail Dashboard](images/dashboard-overview.png)
 
 **Note:** SmartRetail is a demonstration project built with simulated business data. The dashboard and automation workflows illustrate how AI and business process automation can support retail operations.
+
+## About the Developer
+
+Developed as a hands-on portfolio project to demonstrate practical skills in data analytics, business intelligence, AI integration, and business process automation.
+
+The project reflects an interest in building technology solutions that help businesses automate operations, improve data visibility, and make informed decisions.
+
+**Developer:** Solomon Pinto
+
+**GitHub:** [KOJOPINTO](https://github.com/KOJOPINTO)
