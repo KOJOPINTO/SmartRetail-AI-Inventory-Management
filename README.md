@@ -159,6 +159,9 @@ flowchart TD
     L --> M
 ```
 
+
+
+![SmartRetail Make.com Inventory Transaction Automation](images/smartretail-make-automation.png)
 ### Architecture Overview
 
 - **AppSheet:** Provides the user-facing inventory management application.
