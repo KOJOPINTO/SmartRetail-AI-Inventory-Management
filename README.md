@@ -102,7 +102,7 @@ This integration provides a traceable process for managing inventory movements.
 
 ### Dashboard Preview
 
-![SmartRetail Dashboard](https://github.com/user-attachments/assets/6a952e44-53de-4c75-9e1c-b61eb6921ca3)
+![SmartRetail Management Dashboard](images/dashboard..png)
 
 [View the SmartRetail Management Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
 
