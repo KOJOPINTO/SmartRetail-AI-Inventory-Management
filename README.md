@@ -221,6 +221,12 @@ Explore the interactive SmartRetail management dashboard:
 
 **Note:** SmartRetail is a demonstration project built with simulated business data. The dashboard and automation workflows illustrate how AI and business process automation can support retail operations.
 
+## Project Documentation
+
+For more details about the implementation, see:
+
+- [AppSheet Integration Documentation](SmartRetail_AppSheet_Integration_Documentation.md) – Covers the inventory application, transaction validation, stock updates, and Make.com integration.
+
 ## About the Developer
 
 Developed as a hands-on portfolio project to demonstrate practical skills in data analytics, business intelligence, AI integration, and business process automation.
