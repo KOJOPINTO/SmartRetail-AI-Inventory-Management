@@ -4,35 +4,84 @@
 
 SmartRetail is a demonstration business management solution designed to improve inventory control, automate routine business operations, and support data-driven decision-making.
 
-The system integrates Make.com, Google Sheets, Google Gemini AI, and Looker Studio to automate inventory workflows, analyze sales activity, generate inventory forecasts, and provide management with an interactive dashboard.
+The system integrates **AppSheet, Make.com, Google Sheets, Google Gemini AI, and Looker Studio** to provide an inventory management interface, automate inventory workflows, analyze sales activity, generate inventory forecasts, and give management access to an interactive business intelligence dashboard.
+
+The project demonstrates how a connected business application can combine data management, workflow automation, and AI to solve practical retail operational challenges.
 
 ## Business Problem
 
 Retail businesses often face challenges such as:
+
 - Manual inventory tracking and stock adjustments.
 - Delayed identification of low-stock products.
 - Limited visibility into sales performance.
 - Difficulty estimating future product demand.
+- Inaccurate inventory updates and insufficient stock validation.
 - Time-consuming communication between inventory staff and management.
 
-SmartRetail demonstrates how business process automation and AI can help address these challenges.
+SmartRetail demonstrates how business applications, process automation, and AI can help address these challenges.
 
 ## Solution
 
-The project implements five automated workflows:
+The project combines an AppSheet inventory management application with five core operational automation workflows and an AI-powered forecasting capability.
+
+### Core Automation Workflows
 
 1. **Inventory Restock Automation** – Records inventory replenishment and updates product stock quantities.
-2. **Inventory Low-Stock Alert Automation** – Identifies products at or below their reorder levels and sends alerts.
+2. **Inventory Low-Stock Alert Automation** – Identifies products at or below their reorder levels and sends email alerts to management.
 3. **Inventory Stock Adjustment Automation** – Processes inventory adjustment requests and validates stock availability.
 4. **Inventory Stock Adjustment Response Automation** – Sends email notifications for successful and rejected adjustment requests.
-5. **AI Inventory Forecasting Automation** – Uses Google Gemini AI to analyze inventory and sales information, assess stockout risk, and recommend order quantities.
-   
+5. **AppSheet Inventory Transaction Automation** – Processes restock, sale, adjustment, and return transactions submitted through AppSheet, updates product inventory, and records transaction processing results.
+
+### AI Capability
+
+**AI Inventory Forecasting** – Uses Google Gemini AI to analyze inventory and sales information, assess stockout risk, and generate demand forecasts and replenishment recommendations.
+
+## AppSheet Inventory Management Application
+
+SmartRetail includes an AppSheet application that provides an interactive interface for inventory staff to manage inventory transactions.
+
+The application connects to the Google Sheets database and allows authorized users to submit:
+
+- Restock transactions.
+- Sales transactions.
+- Inventory adjustments.
+- Product returns.
+
+### Application Features
+
+- **Transaction Entry:** Staff can submit inventory transactions through an AppSheet form.
+- **Automatic Identification:** Transaction IDs and relevant transaction details are populated automatically.
+- **Stock Visibility:** Displays the selected product's current available stock.
+- **Quantity Validation:** Enforces transaction-specific quantity rules and prevents invalid stock deductions.
+- **Low-Stock Warning:** Displays a warning when a product's stock reaches or falls below its reorder level.
+- **Adjustment Notes:** Requires an explanation when an inventory adjustment is submitted.
+- **Processing Status:** Displays transaction processing information, including Pending, Completed, and Failed statuses.
+- **Role-Based Access:** Uses application user roles to control access to inventory functions.
+
+### Transaction Processing
+
+When a user submits a transaction through AppSheet:
+
+1. The transaction is recorded in the Google Sheets `Inventory_Transactions` table.
+2. Make.com detects the new transaction.
+3. The automation identifies the transaction type and retrieves the corresponding product record.
+4. Stock validation and transaction-specific processing rules are applied.
+5. The product inventory is updated when the transaction is valid.
+6. The transaction record is updated with its processing status and message.
+7. Duplicate transactions and invalid requests are handled to prevent unintended inventory changes.
+
+This integration provides a traceable process for managing inventory movements.
+
 ## Key Features
 
-- **Automated Inventory Restocking:** Automatically updates stock records when inventory is replenished.
+- **Automated Inventory Restocking:** Updates stock records when inventory is replenished.
 - **Low-Stock Monitoring:** Detects products that reach their reorder levels and triggers email alerts.
-- **Inventory Adjustment Validation:** Checks adjustment requests and prevents stock deductions when insufficient inventory is available.
-- **Automated Email Responses:** Notifies users when inventory adjustments are successful or rejected.
+- **Inventory Transaction Management:** Processes restock, sale, adjustment, and return transactions through AppSheet.
+- **Inventory Adjustment Validation:** Checks adjustment requests and prevents invalid stock deductions.
+- **Transaction Tracking:** Records transaction status, processing messages, and timestamps.
+- **Duplicate Transaction Protection:** Prevents previously processed transactions from being applied again.
+- **Automated Email Notifications:** Notifies management about low-stock conditions and relevant inventory processing outcomes.
 - **AI-Powered Forecasting:** Uses Google Gemini AI to assess stockout risk and recommend replenishment quantities.
 - **Interactive Management Dashboard:** Visualizes revenue, sales volume, inventory levels, and AI-generated forecasts using Looker Studio.
 
@@ -40,18 +89,20 @@ The project implements five automated workflows:
 
 | Technology | Purpose |
 |---|---|
-| Make.com | Workflow automation and integration |
-| Google Sheets | Data storage and tracking |
-| Google Forms | Inventory request input |
-| Google Gemini AI | AI-powered inventory analysis |
+| AppSheet | Inventory management application and transaction entry interface |
+| Make.com | Workflow automation and system integration |
+| Google Sheets | Central data storage and transaction tracking |
+| Google Forms | Input for selected inventory workflows |
+| Google Gemini AI | AI-powered inventory analysis and forecasting |
 | Looker Studio | Interactive business intelligence dashboard |
 
 ## Business Intelligence Dashboard
+
 ### Live Dashboard
 
 ### Dashboard Preview
 
-![SmartRetail Dashboard](!<img width="929" height="404" alt="SmartRetail dashboard image" src="https://github.com/user-attachments/assets/6a952e44-53de-4c75-9e1c-b61eb6921ca3" />())
+![SmartRetail Dashboard](https://github.com/user-attachments/assets/6a952e44-53de-4c75-9e1c-b61eb6921ca3)
 
 [View the SmartRetail Management Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
 
@@ -68,7 +119,7 @@ The Looker Studio dashboard provides management with visibility into:
 
 ## AI Forecasting
 
-The AI forecasting workflow analyzes product-level information, including:
+The AI forecasting workflow uses Google Gemini AI to analyze product-level information, including:
 
 - Current inventory levels.
 - Reorder levels.
@@ -76,36 +127,59 @@ The AI forecasting workflow analyzes product-level information, including:
 - Average daily demand.
 - Predicted demand over a seven-day forecast period.
 
-Gemini generates risk classifications and inventory recommendations to support purchasing decisions.
+Gemini generates risk classifications and inventory recommendations to support purchasing and inventory planning decisions.
 
 ## Project Architecture
 
+SmartRetail uses a connected architecture in which AppSheet provides the inventory interface, Google Sheets stores operational data, and Make.com handles business process automation and AI integration.
+
 ```mermaid
 flowchart TD
-    A["Google Forms"] --> B["Google Sheets"]
+    A["AppSheet Inventory Management App"] --> B["Google Sheets Database"]
+    F["Google Forms"] --> B
+
     B --> C["Make.com Automation"]
-    C --> D["Google Gemini AI"]
-    D --> E["AI Forecasts in Google Sheets"]
-    E --> F["Looker Studio Dashboard"]
-    C --> G["Automated Email Notifications"]
+
+    C --> D["Scenario 05: AppSheet Transaction Processing"]
+    D --> E["Validate and Update Product Inventory"]
+    E --> G["Update Transaction Status and Audit Information"]
+
+    E --> H["Scenario 02: Low-Stock Monitoring"]
+    H --> I["Automated Email Alerts"]
+
+    C --> J["AI Inventory Forecasting"]
+    J --> K["Google Gemini AI"]
+    K --> L["AI Forecasts in Google Sheets"]
+
+    B --> M["Looker Studio Dashboard"]
+    L --> M
 ```
 
+### Architecture Overview
 
-Google Forms / Google Sheets → Make.com → Google Gemini AI → Google Sheets → Looker Studio
+- **AppSheet:** Provides the user-facing inventory management application.
+- **Google Sheets:** Serves as the central data source for products, inventory transactions, and related business records.
+- **Make.com:** Coordinates transaction processing, inventory updates, validation, notifications, and AI workflows.
+- **Google Gemini AI:** Analyzes inventory and sales information to generate forecasts and recommendations.
+- **Looker Studio:** Presents business performance information through an interactive management dashboard.
 
-Email notifications are also generated through the automated workflows.
+The AppSheet transaction workflow updates inventory records, while the low-stock monitoring workflow evaluates inventory levels and sends alerts when required.
 
 ## Skills Demonstrated
 
+- Business Application Development
 - Business Process Automation
 - Data Analytics
 - AI Integration
 - Workflow Design
-- Data Management
-- Inventory Analysis
+- AppSheet Application Development
+- Google Sheets Data Management
+- API and System Integration Concepts
+- Inventory Management
 - Demand Forecasting
 - Business Intelligence
 - Dashboard Development
+- Data Validation and Quality Control
 - Process Optimization
 
 ## Project Data
@@ -116,22 +190,34 @@ This project uses simulated sales and inventory records for demonstration and ed
 
 - Integrate live sales and inventory data from a real retail environment.
 - Improve demand forecasting using historical sales patterns and machine learning.
-- Introduce role-based access and approval workflows for inventory adjustments.
-- Expand management reporting with additional business performance metrics.
+- Expand role-based permissions and approval workflows.
+- Introduce additional inventory and sales performance reports.
 - Integrate external inventory or accounting systems through APIs.
-
+- Expand the application to support additional retail business operations.
 
 ## Project Status
 
-Core automation workflows and the management dashboard have been developed and tested. Further improvements may include additional reporting, more advanced forecasting models, and expanded operational integrations.
+The core SmartRetail application and automation workflows have been developed and tested.
+
+Current capabilities include:
+
+- AppSheet inventory transaction management.
+- Google Sheets database integration.
+- Make.com inventory transaction processing.
+- Stock validation and duplicate transaction protection.
+- Low-stock monitoring and email notifications.
+- AI-powered inventory forecasting.
+- Looker Studio management dashboard.
+
+Further improvements may include additional reporting, more advanced forecasting models, and expanded operational integrations.
 
 ## Project Demo
 
 ### Live Dashboard
+
 Explore the interactive SmartRetail management dashboard:
 
 [Open SmartRetail Dashboard](https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108)
-
 
 **Note:** SmartRetail is a demonstration project built with simulated business data. The dashboard and automation workflows illustrate how AI and business process automation can support retail operations.
 
