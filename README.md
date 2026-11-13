@@ -48,6 +48,9 @@ The application connects to the Google Sheets database and allows authorized use
 - Inventory adjustments.
 - Product returns.
 
+### AppSheet dashboard
+![SmartRetail AppSheet Management Dashboard](images/smartretail-appsheet-dashboard.png)
+
 ### Application Features
 
 - **Transaction Entry:** Staff can submit inventory transactions through an AppSheet form.
