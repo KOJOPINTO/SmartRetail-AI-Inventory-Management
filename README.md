@@ -37,6 +37,8 @@ The project combines an AppSheet inventory management application with five core
 
 **AI Inventory Forecasting** – Uses Google Gemini AI to analyze inventory and sales information, assess stockout risk, and generate demand forecasts and replenishment recommendations.
 
+![SmartRetail AI Inventory Forecast](images/smartretail-ai-forecast.png)
+
 ## AppSheet Inventory Management Application
 
 SmartRetail includes an AppSheet application that provides an interactive interface for inventory staff to manage inventory transactions.
