@@ -1,0 +1,135 @@
+# SmartRetail – AI-Powered Inventory & Sales Management
+## Portfolio Case Study
+
+### 1. Project Overview
+
+SmartRetail is a demonstration business application designed to help small retail businesses manage inventory, automate routine operations, and make better-informed decisions using data and AI.
+
+I developed SmartRetail as a practical project to demonstrate how low-code application development, workflow automation, database management, artificial intelligence, and business intelligence can work together in one connected solution.
+
+### 2. The Business Problem
+
+Small retail businesses may experience challenges such as:
+
+- Manually tracking inventory and stock movements.
+- Discovering low-stock products too late.
+- Making inventory adjustments without sufficient validation.
+- Limited visibility into sales and inventory performance.
+- Difficulty estimating future product demand.
+- Time-consuming communication between inventory staff and management.
+
+SmartRetail demonstrates a connected approach to addressing these operational challenges.
+
+### 3. My Solution
+
+I designed and developed an integrated solution using:
+
+- **AppSheet:** Provides the inventory management interface.
+- **Google Sheets:** Stores product, inventory, and related business records.
+- **Make.com:** Automates inventory operations and transaction processing.
+- **Google Gemini AI:** Supports inventory forecasting and adjustment analysis.
+- **Looker Studio:** Provides interactive management reporting.
+
+### 4. Key Features Implemented
+
+**Inventory Management**
+
+Users can submit restock, sale, adjustment, and return transactions through AppSheet.
+
+**Automated Inventory Processing**
+
+Make.com processes submitted transactions, validates quantities, updates product stock, and records processing outcomes.
+
+**Low-Stock Alerts**
+
+The system monitors inventory levels and sends email notifications when products reach or fall below their reorder levels.
+
+**Inventory Adjustment Controls**
+
+The application validates inventory adjustments and requires explanations for adjustment requests.
+
+**Duplicate Transaction Protection**
+
+The transaction automation uses a data store to help prevent previously processed transactions from being applied again.
+
+**AI-Powered Inventory Forecasting**
+
+Google Gemini AI analyzes inventory and sales information to generate demand forecasts, stock risk classifications, and replenishment recommendations.
+
+**AI Inventory Adjustment Analysis**
+
+Gemini AI supports the assessment of inventory adjustments by generating categories, risk levels, explanations, and recommended actions.
+
+**Management Dashboard**
+
+Looker Studio presents sales revenue, sales activity, product inventory, and AI-generated forecasting information.
+
+### 5. Automation Workflows
+
+I developed five core Make.com automation scenarios:
+
+1. Inventory Restock Automation.
+2. Inventory Low-Stock Alert Automation.
+3. Inventory Stock Adjustment Automation.
+4. Inventory Stock Adjustment Response Automation.
+5. AppSheet Inventory Transaction Automation.
+
+Each scenario has a defined responsibility within the overall solution.
+
+### 6. Technical Challenges and Solutions
+
+During development, I encountered and addressed several practical implementation challenges:
+
+- **Inventory accuracy:** Implemented transaction-specific quantity validation and stock availability checks.
+- **Duplicate processing:** Introduced transaction tracking using a Make.com data store.
+- **Application integration:** Connected AppSheet submissions to Google Sheets and Make.com processing.
+- **Transaction visibility:** Added processing statuses, messages, and timestamps.
+- **Low-stock monitoring:** Separated transaction processing from the central low-stock notification workflow.
+- **AI integration:** Connected Gemini AI to inventory analysis and forecasting workflows.
+
+These challenges helped me develop a better understanding of application integration, workflow design, data validation, and troubleshooting.
+
+### 7. Skills Demonstrated
+
+- Business application development.
+- AppSheet application configuration.
+- Make.com workflow automation.
+- Google Sheets database management.
+- AI integration with Google Gemini.
+- Inventory and transaction management.
+- Data validation and quality control.
+- Business intelligence and dashboard development.
+- System integration and process design.
+- Technical documentation and testing.
+
+### 8. Project Outcomes
+
+The project demonstrates a working integration of an inventory application, centralized data storage, automated business workflows, AI-assisted analysis, and management reporting.
+
+The implemented solution supports inventory transaction processing, stock validation, low-stock notifications, AI-generated forecasts, and operational visibility through a management dashboard.
+
+The project uses simulated business data and is intended as a demonstration and portfolio solution rather than a production deployment for a live retailer.
+
+### 9. Future Improvements
+
+Potential improvements include:
+
+- Integrating live retail sales data.
+- Developing more advanced demand forecasting models.
+- Expanding reporting and management analytics.
+- Integrating external accounting and business systems through APIs.
+- Improving approval workflows and user permissions.
+- Adding more comprehensive monitoring, backups, and production deployment controls.
+
+### 10. Project Links
+
+- **GitHub Repository:** https://github.com/KOJOPINTO/SmartRetail-AI-Inventory-Management
+- **Looker Studio Dashboard:** https://datastudio.google.com/reporting/c4c50f31-cfff-438e-a645-7728cf2d1108
+
+### 11. Conclusion
+
+SmartRetail represents my practical application of data analytics, business application development, AI integration, and workflow automation.
+
+Through this project, I demonstrated how connected technologies can be used to design solutions that improve operational processes, support business decisions, and provide greater visibility into business activities.
+
+My goal is to continue developing practical technology solutions that help businesses simplify operations and make better use of their data.
