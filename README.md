@@ -100,6 +100,30 @@ This integration provides a traceable process for managing inventory movements.
 | Google Gemini AI | AI-powered inventory analysis and forecasting |
 | Looker Studio | Interactive business intelligence dashboard |
 
+## Make.com Automation Workflows
+
+SmartRetail uses five Make.com scenarios to automate inventory operations and transaction processing.
+
+### Scenario 01 – Inventory Restock Automation
+
+![Inventory Restock Automation](images/scenario-01-restock.png)
+
+### Scenario 02 – Inventory Low-Stock Alert Automation
+
+![Inventory Low-Stock Alert](images/scenario-02-low-stock-alert.png)
+
+### Scenario 03 – Inventory Stock Adjustment Automation
+
+![Inventory Stock Adjustment](images/scenario-03-stock-adjustment.png)
+
+### Scenario 04 – Inventory Stock Adjustment Response Automation
+
+![Inventory Stock Adjustment Response](images/scenario-04-adjustment-response.png)
+
+### Scenario 05 – AppSheet Inventory Transaction Automation
+
+![AppSheet Inventory Transaction Automation](images/smartretail-make-automation.png)
+
 ## Business Intelligence Dashboard
 
 ### Live Dashboard
