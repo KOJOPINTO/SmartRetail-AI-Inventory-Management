@@ -268,6 +268,8 @@ The following documents provide additional details about the SmartRetail project
 
 3. [SmartRetail Portfolio Case Study](SmartRetail_Portfolio_Case_Study.md) – Explains the business problem, solution, architecture, implemented features, technical challenges, and skills demonstrated.
 
+3. [SmartRetail Portfolio Case Study](SmartRetail_Portfolio_Case_Study.md) – Explains the business problem, solution, architecture, implemented features, technical challenges, and skills demonstrated.
+
 ## About the Developer
 
 Developed as a hands-on portfolio project to demonstrate practical skills in data analytics, business intelligence, AI integration, and business process automation.
