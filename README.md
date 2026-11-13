@@ -223,10 +223,12 @@ Explore the interactive SmartRetail management dashboard:
 
 ## Project Documentation
 
-For more details about the implementation, see:
+The following documents provide additional details about the SmartRetail project:
 
-- [AppSheet Integration Documentation](SmartRetail_AppSheet_Integration_Documentation.md) – Covers the inventory application, transaction validation, stock updates, and Make.com integration.
+1. [AppSheet Integration Documentation](SmartRetail_AppSheet_Integration_Documentation.md) – Explains the inventory application, transaction validation, stock updates, and Make.com integration.
 
+2. [Lessons Learned and Development Process](SmartRetail_Lessons_Learned_and_Development_Process.md) – Documents the development journey, technical challenges, solutions, and lessons learned.
+3. 
 ## About the Developer
 
 Developed as a hands-on portfolio project to demonstrate practical skills in data analytics, business intelligence, AI integration, and business process automation.
