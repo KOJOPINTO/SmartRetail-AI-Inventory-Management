@@ -132,9 +132,11 @@ The AI forecasting workflow uses Google Gemini AI to analyze product-level infor
 - Average daily demand.
 - Predicted demand over a seven-day forecast period.
 
+![SmartRetail AI Inventory Forecast](images/smartretail-ai-forecast.png)
+
 Gemini generates risk classifications and inventory recommendations to support purchasing and inventory planning decisions.
 
-![SmartRetail AI Inventory Forecast](images/smartretail-ai-forecast.png)
+![SmartRetail AI Inventory Adjustment Analysis](images/smartretail-ai-adjustment-analysis.png)
 
 ## Project Architecture
 
