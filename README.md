@@ -134,6 +134,8 @@ The AI forecasting workflow uses Google Gemini AI to analyze product-level infor
 
 Gemini generates risk classifications and inventory recommendations to support purchasing and inventory planning decisions.
 
+![SmartRetail AI Inventory Forecast](images/smartretail-ai-forecast.png)
+
 ## Project Architecture
 
 SmartRetail uses a connected architecture in which AppSheet provides the inventory interface, Google Sheets stores operational data, and Make.com handles business process automation and AI integration.
