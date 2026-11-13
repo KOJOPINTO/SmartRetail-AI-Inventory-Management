@@ -59,6 +59,10 @@ The application connects to the Google Sheets database and allows authorized use
 - **Processing Status:** Displays transaction processing information, including Pending, Completed, and Failed statuses.
 - **Role-Based Access:** Uses application user roles to control access to inventory functions.
 
+### Inventory Transaction Form Dashboard Preview
+
+![SmartRetail AppSheet Inventory Transaction Form](images/smartretail-appsheet-transaction.png)
+
 ### Transaction Processing
 
 When a user submits a transaction through AppSheet:
